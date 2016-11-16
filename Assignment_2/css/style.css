@@ -1,0 +1,332 @@
+/*------------ Tag Declarations ------------*/
+
+body {
+	/*background-color: gray;*/
+}
+
+/*------------ Class Declarations ------------*/
+
+.container {
+	width: 1400px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.header {
+	background-color: #FFFFFF;
+	padding: 22px 116px 22px 118px;
+}
+
+.logo {
+	float:left;
+}
+
+.signLog {
+	float: right;
+}
+
+.navigator {
+	float: right;
+}
+
+.imagery {
+	position: relative;
+	margin-bottom: 68px;
+	height: 480px;
+    background: -webkit-linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255,0,0,0), rgba(0,0,0,1)); /* Standard syntax (must be last) */
+}
+
+.searchBar {
+	border: 1px solid #DDDDDD;
+	padding: 11.5px;
+	width: 568px;
+	margin: 0 auto;
+	margin-bottom: 41px;
+}
+
+.or {
+	margin-bottom: 48px;
+}
+
+.info {
+	text-align: center;
+	margin-bottom: 42px;
+}
+
+.veggies {
+	margin-bottom: 48px;
+}
+
+.repeater {
+	width: 85px;
+}
+
+.rounder {
+	width: 80px;
+	height: 80px;
+	border: 1px solid #4CAF50;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+
+.tomatoImage {
+	background: url("../images/tomato.png") no-repeat center center;
+}
+
+.greenPeasImage {
+	background: url("../images/greenPeas.png") no-repeat center center;
+}
+
+.onionImage {
+	background: url("../images/onion.png") no-repeat center center;
+}
+
+.potatoImage {
+	background: url("../images/potato.png") no-repeat center center;
+}
+
+.brinjalImage {
+	background: url("../images/brinjal.png") no-repeat center center;
+}
+
+.garlicImage {
+	background: url("../images/garlic.png") no-repeat center center;
+}
+
+.popOut {
+	background-color: #F8F8F8;
+	padding-left: 180px;
+	padding-top: 53px;
+}
+
+.infoSec {
+	float: left;
+	width: 600px;
+}
+
+.miniInfo {
+	float: left;
+}
+
+.moreInfo {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #666666;
+}
+
+.viewMore {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: #E74C3C;
+	text-decoration: none;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 21px;
+	padding-right: 21px;
+	border: 1px solid #E85749;
+	border-radius: 3px;
+}
+
+/*------------ Hierarchical Declarations ------------*/
+
+.signLog ul {
+	margin-left: 12px;
+}
+
+.signLog ul li {
+	display: inline;
+}
+
+.signLog a{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #222222;
+	text-decoration: none;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+.signLog a:hover {
+	border: 1px solid #71BE44;
+	border-radius: 4px; 
+	color: #4CAF50;
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navigator ul {
+	/*display: inline;*/
+}
+
+.navigator ul li {
+	display: inline;
+	margin-left: 27px;
+}
+
+.navigator ul li a {
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #222222;
+}
+
+.navigator ul li a:hover {
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #4CAF50;
+}
+
+.imagery h1 {
+	position: absolute;
+	top: 216px;
+	left: 350px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 45px;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-shadow: 2px #000000;
+}
+
+.imagery p {
+	position: absolute;
+	top: 280px;
+	left: 443px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #EEEEEE;
+}
+
+.imagery a {
+	position: absolute;
+	top: 340px;
+	left: 600px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFFFFF;
+	padding: 16px;
+	background-color: #E74C3C;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.searchBar p {
+	color: #888888;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 27.29px;
+	font-weight: 300;
+	float: left;
+}
+
+.searchBar img {
+	float: right;
+}
+
+.or p{
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #AAAAAA;
+	text-align: center;
+}
+
+.info p {
+	color: #222222;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+}
+
+.veggies ul li {
+	float: left;
+	margin-left: 60px;
+}
+
+.veggies ul li:first-child {
+	margin-left: 300px;
+}
+
+.veggies ul li.clear {
+	float: none;
+	width: 0px;
+	margin: 0px;
+}
+
+.repeater p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #000000;
+	font-size: 14px;
+	text-align: center;
+}
+
+.tomatoImage:hover {
+	background: #4CAF50 url("../images/whiteTomato.png") no-repeat center center;
+}
+
+.greenPeasImage:hover {
+	background: #4CAF50 url("../images/whiteGreenPeas.png") no-repeat center center;
+}
+
+.onionImage:hover {
+	background: #4CAF50 url("../images/whiteOnion.png") no-repeat center center;
+}
+
+.potatoImage:hover {
+	background: #4CAF50 url("../images/whitePotato.png") no-repeat center center;
+}
+
+.brinjalImage:hover {
+	background: #4CAF50 url("../images/whiteBrinjal.png") no-repeat center center;
+}
+
+.garlicImage:hover {
+	background: #4CAF50 url("../images/whiteGarlic.png") no-repeat center center;
+}
+
+.popOut img {
+	float: left;
+}
+
+.infoSec h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 26px;
+	color: #222222;
+	font-weight: 300;
+	margin-bottom: 22px;
+}
+
+.infoSec ul li {
+	display: inline;
+}
+
+.infoSec ul li span {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	color: #222222;
+}
+
+.infoSec ul li.clear {
+	float: none;
+	width: 0px;
+	margin: 0px;
+}
