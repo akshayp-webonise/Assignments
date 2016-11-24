@@ -1,0 +1,620 @@
+@import url("reset.css");
+
+/* ------------ Tag Declarations ------------ */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ------------ Reusable CSS ------------ */
+
+.redAnchorButton {
+	font-size: 16px;
+    color: #C21D23;
+    border: 1px solid #C21D23;
+    display: inline-block;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    line-height: 22px;
+    border-radius: 20px;
+}
+
+.redAnchorButton:hover {
+	background-color: #C21D23;
+	color: #FFFFFF;
+}
+
+.viewOurStory {
+	width: 169px;
+}
+
+.viewCollectionRed {
+	width: 145px;
+    color: #C21D23;
+}
+
+.continueReading {
+	font-size: 13px;
+	color: #000000;
+	display: block;
+	line-height: 16px;
+	margin-bottom: 18px;
+}
+
+.continueReading:hover {
+	color: #C21D23;
+}
+
+.whiteAnchorButton {
+	font-size: 16px;
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	display: inline-block;
+	text-align: center;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	line-height: 20px;
+	border-radius: 20px;
+	/*line-height: 38px;*/
+}
+
+.whiteAnchorButton:hover {
+	background-color: #DB2F28;
+}
+
+.bannerButton {
+	width: 155px;
+}
+
+.viewCollections {
+	width: 155px;
+}
+
+.viewCollections:hover {
+	background-color: #C21D23;
+}
+
+.topButton {
+	margin-bottom: 19px;
+}
+
+.bottomButton {
+	margin-bottom: 39px;
+}
+
+.printSareeButton {
+    width: 99px;
+}
+   
+.printSareeButton:hover {
+	background-color: #C21D23;
+} 
+
+.dots {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.dots li {
+	float: left;
+	margin-left: 8px; 
+}
+
+.dots li:first-child {
+	margin-left: 76px;
+}
+
+.dots li:clear {
+	clear: both;
+	float: none;
+}
+
+.dots li a {
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: rgba(255,255,255,0);
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+}
+
+.dots li a:hover {
+	background-color: #FFFFFF;
+}
+
+.dots2 {
+	margin-bottom: 56px;
+}
+
+.dots2 li:first-child {
+	margin-left: 428px;
+}
+
+.dots2 li a {
+	border: 1px solid #8b847d;
+}
+
+.dots2 li a:hover {
+	background-color: #8B847D;
+}
+
+/* ------------ Class Declarations ------------ */
+
+.container {
+	width: 940px;
+	margin: 0px auto;
+}
+
+.clear {
+	clear: both;
+}
+
+.header {
+	padding-top: 5px;
+	padding-bottom: 9px;
+}
+
+.navOne {
+	float: left;
+}
+
+.navTwo {
+	float: right;
+}
+
+.caret {
+	background-image: url('../images/dropDown.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 8px;
+	height: 4px;
+}
+
+.search {
+	background-image: url('../images/searchHeader.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+	height: 15px;
+}
+
+.user {
+	background-image: url('../images/user.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 13px;
+	height: 15px;
+}
+
+.notifications {
+	background-image: url('../images/notifications.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 11px;
+	height: 15px;
+}
+
+.imageSlider {
+	width: 1200px;
+	margin: 0px auto;
+	position: relative;
+	margin-bottom: 31px;
+}
+
+.sareeInfo {
+	width: 325px;
+	position: absolute;
+	top: 167px;
+	left: 690px;
+}
+
+.positioning {
+	position: absolute;
+	top: 282px;
+}
+
+.leftArrow {
+	left: 10px;
+}
+
+.rightArrow {
+	right: 10px;
+}
+
+.fixedContent {
+	position: absolute;
+	bottom: 0px;
+	right: 130px;
+	text-align: center;
+}
+
+.marketingOffers {
+	display: inline-block;
+	border-top: 1px solid;
+	border-color: rgba(255,255,255,0.2);
+	padding-top: 21px;
+	padding-bottom: 4px;
+}
+
+.rounder {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	margin-right: 15px;
+	float: left;
+}
+
+.return {
+	background: url('../images/return.png') no-repeat center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.freeShipping {
+	background: url('../images/freeShipping.png') no-repeat center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.tollFree {
+	background: url('../images/tollFree.png') no-repeat center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sectionalHeaders {
+	text-align: center;
+	margin-bottom: 46px;
+}
+
+.textWithDash {
+	font-weight: 300;
+	font-size: 28px;
+	color: #333333;
+	display: inline-block;
+	border: none;
+	vertical-align: middle;
+	margin-bottom: 18px;
+}
+
+.dash {
+	min-width: 100px;
+	border-top: 1px solid #E1E1E1;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.morneeImagery {
+	position: relative;
+	margin-bottom: 74px;
+}
+
+.morneeInfo {
+    width: 460px;
+    background-color: #000000;
+    opacity: 0.8;
+    text-align: center;
+    padding-top: 36px;
+    padding-bottom: 39px;
+}
+
+.net {
+	position: absolute;
+    bottom: 0px;
+    left: : 0px;
+}
+
+.embroidery {
+	position: absolute;
+    bottom: 0px;
+    right:  0px;
+}
+
+.lest {
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.test {
+	width: 312px;
+	position: relative;
+}
+
+.printSaree {
+	width: 1200px;
+	margin: 0px auto;
+	position: relative;
+	margin-bottom: 28px;
+}
+
+.printSareeContent {
+	width: 470px;
+}
+
+.printSareeInfo {
+	width: 340px;
+	position: absolute;
+	top: 99px;
+	left: 609px;
+}
+
+.printSareeImages {
+	position: absolute;
+	bottom: 49px;
+	right: 128px;
+}
+
+.shucks1 {
+	position: absolute;
+	bottom: 11px;
+	left: 60px;
+}
+
+.shucks2 {
+	position: absolute;
+	bottom: 11px;
+	right: 59px;
+}
+
+.services {
+	text-align: center;
+	margin-bottom: 43px;
+}
+
+.tester {
+	width: 157px;
+	background: transparent;
+}
+
+.image1 {
+	position: absolute;
+	left: 73px;
+	bottom: 10px;
+}
+
+.image2 {
+	position: absolute;
+	bottom: 10px;
+	left: 390px;
+}
+
+.image3 {
+	position: absolute;
+	bottom: 10px;
+	left: 703px;
+}
+
+/* ------------ Hierarachical Declarations ------------ */
+
+.header a {
+	display: block;
+	float: left;
+}
+
+.header img {
+	display: block;
+}
+
+.header ul {
+	padding-top: 9px;
+}
+
+.header ul li {
+	float: left;
+}
+
+.header ul li.clear {
+	clear: both;
+	float: none;
+}
+
+.header ul li a {
+	color: #ED1C24;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 400;
+	vertical-align: middle;	
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.header ul li a:hover {
+	border-bottom: 1px solid #ED1C24;
+}
+
+.navOne ul li:first-child {
+	margin-left: 20px;
+}
+
+.navOne ul li {
+	margin-left: 18px;
+}
+
+.navTwo ul li {
+	margin-right: 30px;
+}
+
+.navTwo ul li:last-child {
+	margin-right: 14px;
+}
+
+.navTwo ul li a {
+	font-size: 13px;
+}
+
+.sareeInfo h1 {
+	font-family: 'Glegoo', serif;
+	font-size: 60px;
+	font-weight: 400;
+	color: #FFFFFF;
+	border-bottom: 3px solid #EE1C25;
+	display: inline-block;
+}
+
+.sareeInfo span {
+	font-size: 28px;
+	font-weight: 300;
+	color: #FFFFFF;
+	line-height: 40px;
+	display: block;
+}
+
+.sareeInfo p {
+	font-size: 14px;
+	font-weight: 300;
+	color: #FFFFFF;
+	line-height: 16px;
+	margin-bottom: 15px;
+}
+
+.marketingOffers li {
+	float: left;
+	width: 300px;
+	margin-left: 20px;
+}
+
+.marketingOffers li:first-child {
+	margin-left: 0px;
+} 
+
+.marketingOffers span {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+}
+
+.marketingOffers p {
+	float: left;
+	text-align: left;
+	white-space: pre;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 14px;
+	color: #FFFFFF;
+}
+
+.sectionalHeaders h1 {
+	font-family: 'Glegoo', serif;
+	font-size: 40px;
+	color: #999999;
+	margin-bottom: 11px;
+	line-height: 48px;
+}
+
+.sectionalHeaders h3 {
+	font-size: 18px;
+	color: #333333;
+	line-height: 23px;
+}
+
+.morneeImagery img {
+	float: left;
+} 
+
+.morneeImagery img:first-child {
+	margin-right: 20px;
+}
+
+.morneeInfo span {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-right: 50px;
+    max-width: 205px;
+    display: inline-block;
+    text-align: left;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.lest ul {
+	display: inline-block;
+	border: 1px solid #EEEEEE;
+	padding-bottom: 5px;
+}
+
+.lest ul li{
+	float: left;
+}
+
+.lest ul li:clear {
+	clear: both;
+	float: none;
+}
+
+.test .actress {
+	padding-left: 10px;
+	border-bottom: 1px solid #EEEEEE;
+	margin-bottom: 8px;
+	padding-top: 18px; 
+}
+
+.test h4 {
+	font-size: 18px;
+}
+
+.test span {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+	line-height: 22px;
+	color: #999999;
+}
+
+.test img {
+	padding-left: 6px;
+}
+
+.test:hover h4 {
+	color: #EE1C25;
+}
+
+.test:hover .test3 {
+	position: absolute;	
+	bottom: 0px;
+	right: 0px;
+	width: 312px;
+	height: 200px;
+}
+
+.printSareeInfo h3 {
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 36px;
+	margin-bottom: 11px;
+}
+
+.printSareeInfo p {
+	color: #8B847D;
+	font-size: 13px;
+	width: 325px;
+	line-height: 14px;
+	margin-bottom: 11px;
+}
+
+.printSareeImages img:first-child {
+	margin-right: 20px;
+}
+
+.services img {
+	margin-bottom: 20px;
+}
+
+.services span{
+	display: block;
+	width: 770px;
+	margin-left: 90px;
+	margin-bottom: 21px;
+	line-height: 20px;
+}
