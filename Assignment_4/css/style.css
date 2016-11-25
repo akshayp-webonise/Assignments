@@ -108,7 +108,7 @@ a {
 }
 
 .dots li:first-child {
-	margin-left: 76px;
+	margin-left: 0px;
 }
 
 .dots li:clear {
@@ -134,7 +134,7 @@ a {
 }
 
 .dots2 li:first-child {
-	margin-left: 428px;
+	margin-left: 0px;
 }
 
 .dots2 li a {
@@ -206,7 +206,7 @@ a {
 }
 
 .imageSlider {
-	width: 1200px;
+	width: 100%;
 	margin: 0px auto;
 	position: relative;
 	margin-bottom: 31px;
@@ -313,7 +313,7 @@ a {
 .net {
 	position: absolute;
     bottom: 0px;
-    left: : 0px;
+    left: 0px;
 }
 
 .embroidery {
@@ -333,7 +333,7 @@ a {
 }
 
 .printSaree {
-	width: 1200px;
+	width: 100%;
 	margin: 0px auto;
 	position: relative;
 	margin-bottom: 28px;
@@ -397,7 +397,7 @@ a {
 }
 
 
-/* ------------ Hierarachical Declarations ------------ */
+/* ------------ Hierarchical Declarations ------------ */
 
 .header a {
 	display: block;
@@ -454,6 +454,11 @@ a {
 .navTwo ul li a {
 	font-size: 13px;
 }
+
+.header ul li a:hover {
+	border-bottom: none;
+}
+
 
 .sareeInfo h1 {
 	font-family: 'Glegoo', serif;
@@ -612,8 +617,7 @@ a {
 	margin-bottom: 20px;
 }
 
-.services span{
-	display: block;
+.services p{
 	width: 770px;
 	margin-left: 90px;
 	margin-bottom: 21px;
@@ -622,9 +626,8 @@ a {
 
 .footer {
 	background-color: #F8F8F8;
-	height: 312px;
 	border-top: 1px solid #DDDDDD;
-	width: 1200px;
+	width: 100%;
 	margin: 0px auto;
 	padding-top: 47px;
 }
@@ -634,6 +637,7 @@ a {
 	font-size: 14px;
 	line-height: 28px;
 	margin-left: 50px;
+	min-width: 140px;
 }
 
 .footer ul:first-child {
@@ -685,7 +689,8 @@ a {
 	border-top-left-radius: 6px;
 	border-bottom-left-radius: 6px;
 	padding-left: 7px;
-	width: 208px;
+	padding-right: 5px;
+	width: 203px;
 	border-right: none;
 }
 
@@ -700,4 +705,19 @@ a {
 	padding-left: 17px;
 	padding-right: 16px;
 	background-color: transparent;
+	cursor: pointer;
+}
+
+.submitInput:hover {
+	background-color: #EE1C25;
+	color: #FFFFFF;
+}
+
+.footer ul li a {
+	color: #000000;
+	display: block;
+}
+
+.footer ul li a:hover {
+	color: #ED1C24;
 }
