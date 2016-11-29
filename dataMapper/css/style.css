@@ -475,3 +475,18 @@ span.clear {
 ul li a.dropper {
 	line-height: 16px;
 }
+
+
+.userLocation {
+	background: url('../images/marker.png') no-repeat center center;
+	display: inline-block;
+	height: 28px;
+	width: 21px;
+	box-sizing: border-box;
+	padding-top: 3px;
+	padding-left: 7px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+	color: #FFFFFF;
+}
