@@ -1,0 +1,206 @@
+/*-------------- IMPORTS --------------*/
+
+@import url('reset.css');
+@import url('bootstrap.min.css');
+@import url('ionicons.min.css');
+
+/*-------------- FONTS --------------*/
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;*/
+
+
+@font-face { 
+	font-family: "Ionicons"; 
+	src: url("../fonts/ionicons.eot?v=2.0.0"); 
+	src: url("../fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), 
+	url("../fonts/ionicons.ttf?v=2.0.0") format("truetype"), 
+	url("../fonts/ionicons.woff?v=2.0.0") format("woff"), 
+	url("../fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg"); 
+	font-weight: normal; 
+	font-style: normal; 
+}
+
+@font-face {
+    font-family: 'exo_2bold';
+    src: url('../fonts/Exo2-Bold-webfont.eot');
+    src: url('../fonts/Exo2-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Exo2-Bold-webfont.woff') format('woff'),
+         url('../fonts/Exo2-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Exo2-Bold-webfont.svg#exo_2bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-------------- REUSABLE CSS --------------*/
+a, a:hover, a:focus{
+	text-decoration: none;
+}
+
+/*-------------- TAG DECLARATIONS --------------*/
+
+/*-------------- CLASS DECLARATIONS --------------*/
+.topHeader {
+	padding-top: 12px;
+	padding-bottom: 11px;
+}
+
+.topLinks {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #1A237E;
+	line-height: 24px;
+	border: 1px solid #C5CAE9;
+	text-decoration: none;
+}
+
+.topLinks:hover {
+	color: #1A237E;
+	background-color: #C5CAE9;
+}
+
+.topLinks:focus {
+	color: #1A237E;
+}
+
+.col-md-1.loginLink {
+	padding-right: 0px;
+	width: 85px;
+}
+
+.loginLink a {
+	font-size: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	line-height: 16px;
+	display: block;
+}
+
+.languageLinks {
+	margin-left: 35px;
+}
+
+.languageLinks a {
+	font-size: 12px;
+	width: 40px;
+}
+
+.languageLinks a:nth-child(2) {
+	border-right: none;
+	padding-right: 0px;
+}
+
+a.active {
+	background-color: #C5CAE9; 
+}
+
+.provincialSites {
+	vertical-align: middle;
+}
+
+.provincialSites:hover {
+	background-color: #C5CAE9;
+}
+
+.btn.provincialSites {
+	border-radius: 0px;
+	padding: 0px;
+	border: none;
+}
+
+.open>.dropdown-toggle.btn-default.provincialSites {
+	background-color: #C5CAE9;
+	color: #1A237E;
+}
+
+ .btn-default:active.provincialSites {
+ 	background-color: #C5CAE9;
+ 	-webkit-box-shadow: none;
+ }
+
+.btn-default:focus.provincialSites {
+  	background-color: #C5CAE9;
+  	color: #1A237E;
+}
+
+.navbar.header {
+	min-height: 80px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.navbar-header a {
+	display: block;
+	padding: 0px;
+	padding-left: 20px;
+}
+
+.navbar-default.header {
+	background-color: #FFFFFF;
+}
+
+.navbar-nav>li>a {
+	line-height: 35px;
+}
+
+.headerLinks {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #444444;
+}
+
+.navbar-nav>li>a.headerLinks:hover, .navbar-nav>li>a.headerLinks:focus {
+	color: #A01D26;
+	outline: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	background-color: transparent;
+	color: #777777;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: transparent;
+	color: #A01D26;
+}
+
+.nav>li>a.headerLinks {
+	padding: 0px;
+	line-height: 64px;
+}
+
+.navbar-nav li:first-child {
+	margin-left: 90px;
+}
+
+.navbar-nav li {
+	margin-left: 38px;
+}
+
+.navbar-default .navbar-nav>.open>a {
+	background-color: transparent;
+}
+
+.search a {
+	background: url('../images/search.png') no-repeat center center;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-top: 25px;
+}
+
+.search a:hover {
+	box-shadow: 1px 1px 1px #000;
+}
+
+.navbar-default .navbar-nav>.open>a.headerLinks, .navbar-default .navbar-nav>.open>a.headerLinks:focus, .navbar-default .navbar-nav>.open>a.headerLinks:hover {
+	background-color: transparent;
+	color: #A01D26;
+}
+
+/*-------------- HIERARCHICAL DECLARATIONS --------------*/
