@@ -1,0 +1,659 @@
+/*-------------- IMPORTS --------------*/
+
+@import url('reset.css');
+@import url('bootstrap.min.css');
+
+/*-------------- FONTS --------------*/
+
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;*/
+
+/*-------------- REUSABLE CSS --------------*/
+a, a:hover, a:focus{
+	text-decoration: none;
+}
+
+h1, h2,h3 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+ul {
+	margin-bottom: 0px;
+}
+
+/*-------------- TAG DECLARATIONS --------------*/
+
+/*-------------- CLASS DECLARATIONS --------------*/
+.clear {
+	clear: both;
+	float: none;
+}
+
+.topHeader {
+	padding-top: 12px;
+	padding-bottom: 11px;
+}
+
+.topLinks {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #1A237E;
+	line-height: 24px;
+	border: 1px solid #C5CAE9;
+	text-decoration: none;
+}
+
+.topLinks:hover {
+	color: #1A237E;
+	background-color: #C5CAE9;
+}
+
+.topLinks:focus {
+	color: #1A237E;
+}
+
+.loginLink {
+	margin-left: 15px;
+	width: 70px;
+}
+
+.loginLink a {
+	font-size: 14px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	line-height: 16px;
+	display: block;
+}
+
+.languageLinks {
+	margin-left: 35px;
+}
+
+.languageLinks a {
+	font-size: 12px;
+	width: 40px;
+}
+
+.languageLinks a:nth-child(2) {
+	border-right: none;
+	padding-right: 0px;
+}
+
+a.active {
+	background-color: #C5CAE9; 
+}
+
+.provincialSites {
+	vertical-align: middle;
+}
+
+.provincialSites:hover {
+	background-color: #C5CAE9;
+}
+
+.btn.provincialSites {
+	border-radius: 0px;
+	padding: 0px;
+	border: none;
+}
+
+.open>.dropdown-toggle.btn-default.provincialSites {
+	background-color: #C5CAE9;
+	color: #1A237E;
+}
+
+ .btn-default:active.provincialSites {
+ 	background-color: #C5CAE9;
+ 	-webkit-box-shadow: none;
+ }
+
+.btn-default:focus.provincialSites {
+  	background-color: #C5CAE9;
+  	color: #1A237E;
+}
+
+.navbar.header {
+	min-height: 80px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.navbar-header a {
+	display: block;
+	padding: 0px;
+	padding-left: 20px;
+}
+
+.navbar-default.header {
+	background-color: #FFFFFF;
+}
+
+.navbar-nav>li>a {
+	line-height: 35px;
+}
+
+.headerLinks {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #444444;
+}
+
+.navbar-nav>li>a.headerLinks:hover, .navbar-nav>li>a.headerLinks:focus {
+	color: #A01D26;
+	outline: 0px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	background-color: transparent;
+	color: #777777;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: transparent;
+	color: #A01D26;
+}
+
+.nav>li>a.headerLinks {
+	padding: 0px;
+	line-height: 64px;
+}
+
+.navbar-nav li:first-child {
+	margin-left: 90px;
+}
+
+.navbar-nav li {
+	margin-left: 38px;
+}
+
+.navbar-default .navbar-nav>.open>a {
+	background-color: transparent;
+}
+.search {
+	height: 65px;
+}
+
+.search a {
+	background: url('../images/search.png') no-repeat center center;
+	width: 16px;
+	display: block;
+	height: 65px;
+	vertical-align: middle;
+	/*margin-top: 25px;*/
+}
+
+.search a:hover {
+	box-shadow: 1px 1px 1px #000;
+}
+
+.navbar-default .navbar-nav>.open>a.headerLinks, .navbar-default .navbar-nav>.open>a.headerLinks:focus, .navbar-default .navbar-nav>.open>a.headerLinks:hover {
+	background-color: transparent;
+	color: #A01D26;
+}
+
+
+.navbar-brand.logo {
+	height: 65px;
+}
+
+.navbar.header {
+	margin-bottom: 0px;
+}
+
+.banner {
+	background: url('../images/banner.jpg') no-repeat center center;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	background-size: cover;
+}
+
+.banner ul {
+	text-align: center;
+	padding-top: 228px;
+}
+
+.banner li {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	width: 390px;
+	text-transform: uppercase;
+	background-color: #CECEC1;
+	opacity: 0.8;
+}
+
+.banner li a {
+	display: block;
+	line-height: 52px;
+	color: #A01D26
+}
+
+.banner li a:hover {
+	background-color: #FFF;
+	opacity: 1;
+}
+
+.banner li a i {
+	margin-right: 27px;
+}
+
+.redBanner {
+	background-color: #A01D26;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-left: 100px;
+	padding-right: 102px;
+	margin-bottom: 30px;
+}
+
+.tvImage {
+	background: url('../images/tv.png') no-repeat;
+	width: 28px;
+	height: 23px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.calendarImage {
+	background: url('../images/calendar.png') no-repeat center center;
+	width: 25px;
+	height: 23px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.flagImage {
+	background: url('../images/flag.png') no-repeat center center;
+	width: 25px;
+	height: 23px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.honk {
+	background: url('../images/honk.png') no-repeat center center;
+	width: 38px;
+	height: 38px;
+}
+
+.redBanner span {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #F9F0F1;
+	font-size: 16px;
+	line-height: 18px;
+	margin-left: 310px;
+	margin-top: 10px;
+}
+
+.accordion {
+	background: url('../images/accordion.png') no-repeat center center;
+	width: 30px;
+	height: 30px;
+	margin-top: 4px;
+	display: block;
+}
+
+.gradientPlacer {
+	position: relative;
+	display: block;
+	margin-bottom: 50px;
+}
+
+.gradientBox {
+	width: 770px;
+	height: 320px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 15%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.51) 51%, rgba(0,0,0,1) 100%); 
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.51) 51%,rgba(0,0,0,1) 100%); 
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.15) 15%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.51) 51%,rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); 
+}
+
+.gradientText {
+	width: 600px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 25px;
+	left: 30px;
+}
+
+.gradientText:hover {
+	color: #A01D26;
+}
+
+.gradientText span {
+	font-weight: 400;
+	font-size: 15px;
+}
+
+.gradientText ul {
+	margin-left: 20px;
+	margin-bottom: 15px;
+	margin-top: 4px;
+}
+
+.gradientText li {
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-left: 4px;
+	line-height: 14px;
+}
+
+.gradientText li:first-child {
+	margin-left: 0px;
+	border-right: 2px solid #888A88;
+	padding-right: 5px;
+}
+
+.gradientText p {
+	font-size: 28px;
+	max-width: 600px;
+	margin-bottom: 0px;
+}
+
+a.thumbs {
+	display: block;
+	margin-bottom: 30px;
+}
+
+a.thumbs:hover {
+	box-shadow: 1px 1px 1px #000000;
+}
+
+.thumbInfo {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	width: 370px;
+	border: 1px solid #DDDDDD;
+	border-top: none;
+	padding-left: 21px;
+	padding-top: 22px;
+	padding-bottom: 20px;
+}
+
+.thumbInfo span {
+	font-weight: 400;
+	color: #666666;
+	font-size: 13px;
+}
+
+.thumbInfo ul {
+	margin-left: 16px;
+	color: #A01D26;
+}
+
+.thumbInfo li {
+	font-size: 13px;
+	text-transform: uppercase;
+	line-height: 18px;
+	margin-left: 8px;
+}
+
+.thumbInfo li:first-child {
+	border-right: 2px solid #888A88;
+	margin-left: 0px;
+	padding-right: 7px;
+}
+
+.thumbInfo p {
+	font-size: 20px;
+	line-height: 30px;
+	max-width: 280px;
+	margin-bottom: 0px;
+	color: #444444;
+}
+
+a.moreNews {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #1A237E;
+	text-align: center;
+	border: 1px solid #C5CAE9;
+	line-height: 38px;
+	margin-bottom: 61px;
+}
+
+a.moreNews:hover {
+	color: #A01D26;
+	box-shadow: 1px 1px 1px #000000;
+}
+
+a.advertisementTwo {
+	display: block;
+	text-align: center;
+	margin-bottom: 63px;
+}
+
+h1.teamCanada {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #444444;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.teamHeader h2 {
+	font-family: 'Lato', sans-serif;
+	font-size: 22px;
+	color: #444444;
+	margin-bottom: 25px;
+	margin-top: 40px;
+}
+
+.teamHeader h2:first-child {
+	margin-top: 0px;
+}
+
+.meetCanada a {
+	display: block;
+}
+
+.canadaTeam {
+	max-width: 368px;
+	border: 1px solid #DDDDDD;
+	padding-left: 14px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	margin-bottom: 42px;
+}
+
+.canadaTeam:hover {
+	box-shadow: 1px 1px 1px #000000;
+}
+
+.canadaTeamInfo {
+	margin-left: 15px;
+}
+
+.canadaTeamInfo h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	color: #A01D26;
+	margin-top: 14px;
+	margin-bottom: 7px;
+}
+
+.canadaTeamInfo span {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: #444444;
+}
+
+.logos a {
+	display: block;
+}
+
+.logoContent {
+	width: 168px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+	line-height: 98px;
+	margin-bottom: 30px;
+}
+
+.logoContent:hover {
+	box-shadow: 1px 1px 1px #000000;
+}
+
+.marginal {
+	margin-top: 32px;
+}
+
+.dropdownSection {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: #A01D26;
+	line-height: 38px;
+	width: 129px;
+	border: 1px solid #DDDDDD;
+	text-align: center;
+}
+
+.sectionDropdown {
+	background: url('../images/sectionDropdown.png') no-repeat center center;
+	width: 11px;
+	height: 7px;
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.dropdownSection:hover {
+	color: #A01D26;
+	box-shadow: 1px 1px 1px #000;
+}
+
+.backgrounder {
+	background-color: #F9F9F9;
+	padding: 0px 15px;
+	padding-top: 36px;
+}
+
+.backgrounder img {
+	display: block;
+	width: 300px;
+	margin: 0px auto;
+	margin-bottom: 85px;
+}
+
+.backgrounder li {
+	border-top: 1px solid #DDDDDD;
+}
+
+.rightContent {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	color: #444444;
+	text-transform: uppercase;
+}
+
+.padder {
+	padding-bottom: 28px;
+	border-bottom: 1px solid #DDDDDD;
+	margin-bottom: 0px;
+}
+
+.backgrounder li {
+	padding-top: 26px;
+}
+
+.backgrounder li span {
+	display: block;
+	margin-bottom: 11px;
+}
+
+.backgrounder li a {
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	color: #1A237E;
+	display: block;
+	margin-bottom: 18px;
+}
+
+.backgrounder li a:hover {
+	text-decoration: underline;
+}
+
+.backgrounder li a i {
+	margin-left: 5px;
+}
+
+.leaderBoardLink {
+	background: url('../images/viewLeaderboard.png');
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+}
+
+a.leaderBoardView {
+	display: block;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #1A237E;
+	text-align: center;
+	border: 1px solid #C5CAE9;
+	line-height: 38px;
+	margin-bottom: 61px;
+}
+
+a.leaderBoardView:hover {
+	background-color: #EBEEFF;
+	color: #1A237E;
+}
+
+.outerList {
+	margin-bottom: 60px;
+}
+
+.innerList li {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #1A237E;
+	line-height: 30px;
+}
+
+.innerList li:first-child {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #444444;
+}
+
+.footer p {
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	color: #666666;
+	text-transform: uppercase;
+}
+
+.footer li i {
+	margin-left: 5px;
+}
+
+.innerList li a {
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	color: #1A237E;
+	line-height: 30px;
+}
+
+.innerList li a:hover {
+	color: red;
+}
