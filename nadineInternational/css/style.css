@@ -1,0 +1,471 @@
+/*-------------- IMPORTS --------------*/
+
+@import url('bootstrap.min.css');
+@import url('reset.css');
+
+/*-------------- TAG DECLARATIONS --------------*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/*-------------- CLASS & HIERARCHICAL DECLARATIONS --------------*/
+
+.topHeader {
+	background-color: #3B3E46;
+	padding-top: 18px;
+	padding-bottom: 17px;
+}
+
+.topHeader span {
+	font-size: 13px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	margin-left: 10px;
+	vertical-align: top;
+}
+
+.glyphicon.colorChanger {
+	text-shadow: -1px 0 #D33546, 0 1px #D33546, 1px 0 #D33546, 0 -1px #D33546;
+}
+
+.topHeader ul li {
+	margin-right: 32px;
+	margin-left: 7px;
+}
+
+.navbar-default .navbar-toggle.toggler {
+	border-radius: 0px;
+	border-color: #D33546; 
+}
+
+.navbar-default .navbar-toggle.toggler:hover {
+	background-color: #3B3E46;
+}
+
+.navbar-default .navbar-toggle.toggler:focus {
+	background-color: #3B3E46;
+}
+
+.navbar-default .navbar-toggle .icon-bar.barColoring {
+	background-color: #D33546;
+}
+
+.mainHeader {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	color: #000000;
+	background-color: #FFFFFF;
+	margin-bottom: 0px;
+}
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand.mainHedaer {
+	margin-left: 0px;
+}
+
+.navbar-default .navbar-nav>li>a.headerLinks {
+	color: #000000;
+	line-height: 98px;
+	padding-left: 32px;
+}
+
+.navbar-nav>li>a.headerLinks {
+	padding: 0px;
+}
+
+.navbar-default .navbar-nav>li>a.headerLinks:hover {
+	color: #D33546;
+}
+
+.logo {
+	padding: 0px;
+	margin-top: 28px;
+}
+
+.bannerSection {
+	background: url('../images/banner.jpg') no-repeat center center;
+	background-size: cover;
+	display: block; 
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 175px;
+	padding-bottom: 225px;
+}
+
+.bannerSection h1 {
+	font-size: 72px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.bannerSection span {
+	color: #E63547;
+	font-weight: 700;
+}
+
+.bannerSection p {
+	font-size: 26px;
+	line-height: 42px;
+	font-weight: 600;
+	margin-bottom: 45px;
+}
+
+.bannerSection a {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 64px;
+	background-color: #E63547;
+	color: #FFFFFF;
+	width: 244px;
+	display: inline-block;
+	text-align: center;
+}
+
+.bannerSection a:hover {
+	color: #E63547;
+	background-color: #FFFFFF;
+}
+
+.nadineFeatures {
+	text-align: center;
+	padding-top: 105px;
+	padding-bottom: 105px;
+}
+
+.nadineFeatures	h2 {
+	text-transform: uppercase;
+	font-size: 36px;
+	margin-bottom: 32px;
+}
+
+.nadineFeatures h2 span {
+	color: #E63547;
+	font-weight: 700;
+}
+
+.dashedContent {
+	margin: 0px auto;
+	margin-bottom: 45px;
+}
+
+.dash {
+	display: inline-block;
+	width: 62px;
+	border: 1px solid #E63547;
+	margin-bottom: 7px;
+}
+
+.round {
+	border: 2px solid #E63547;
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+}
+
+.nadineFeatures h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #000000;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.nadineFeatures p {
+	font-size: 14px;
+	color: #616161;
+	line-height: 25px;
+}
+
+.comprehensiveness {
+	background: url('../images/comprehensive.png') no-repeat;
+	display: block;
+	margin: 0px auto;
+	width: 98px;
+	height: 101px;
+	margin-bottom: 50px;
+}
+
+.practicality {
+	background: url('../images/practicality.png') no-repeat;
+	display: block;
+	margin: 0px auto;
+	width: 98px;
+	height: 101px;
+	margin-bottom: 50px;
+}
+
+.thoughtfulness {
+	background: url('../images/thoughtfulness.png') no-repeat;
+	display: block;
+	margin: 0px auto;
+	width: 98px;
+	height: 101px;
+	margin-bottom: 50px;
+}
+
+.ourMission {
+   background: url('../images/bannerTwo.jpg') no-repeat;
+   background-size: cover;
+   padding-top: 150px;
+   padding-bottom: 155px;
+ }
+
+.missionContent {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.missionContent h1 {
+	font-size: 36px;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+}
+
+.missionContent span {
+	font-weight: 700;
+	color: #E63547;
+}
+
+.missionContent p {
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.ourClients {
+	text-align: center;
+	padding-top: 56px;
+	padding-bottom: 101px;
+}
+
+.ourClients h1 {
+	font-size: 36px;
+	text-transform: uppercase;
+	margin-bottom: 57px;
+}
+
+.ourClients span {
+	font-weight: 700;
+	color: #E63547;
+}
+
+.ourClients a {
+	display: block;
+	border: 1px solid #FFFFFF;
+}
+
+.ourClients a:hover {
+	border: 1px solid #000000;
+}
+
+.torontoPearson {
+	background: url('../images/torontoPearson.png') no-repeat center center;
+	display:inline-block;
+	height: 100px;
+	width: 233px;
+	vertical-align: middle;
+}
+
+.universityToronto {
+	background: url('../images/universityToronto.png') no-repeat center center;
+	display:inline-block;
+	height: 100px;
+	width: 233px;
+}
+
+.hiltonHotels {
+	background: url('../images/hiltonHotels.png') no-repeat center center;
+	display:inline-block;
+	height: 100px;
+	width: 233px;
+}
+
+.toronto {
+	background: url('../images/toronto.png') no-repeat center center;
+	display:inline-block;
+	height: 100px;
+	width: 233px;
+}
+
+.footer {
+	background-color: #2B2C31;
+	color: #FFFFFF;
+	padding-top: 56px;
+	padding-bottom: 75px;
+}
+
+.company {
+	text-transform: uppercase;
+}
+
+.company li {
+	line-height: 38px;
+	font-size: 14px;
+}
+
+.company li a {
+	color: #FFFFFF;
+	display: block;
+}
+
+
+.company li a:hover {
+	color: #E63547;
+}
+
+.footer ul li:first-child {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 44px;
+	border-bottom: 1px solid #2F3035;
+	margin-bottom: 23px;
+}
+
+.contact li {
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.address {
+	width: 225px;
+	margin-bottom: 26px;
+}
+
+.phone {
+	width: 175px;
+}
+
+.consultingEngineers {
+	background: url('../images/consultingEngineersOntario.png') no-repeat center center;
+	display: block;
+	width: 216px;
+	height: 75px;
+	margin-bottom: 70px;
+}
+
+.engineersOntario {
+	background: url('../images/ontarioEngineers.png') no-repeat center center;
+	display: block;
+	width: 216px;
+	height: 75px;
+	margin-bottom: 70px;
+}
+
+.nfpa {
+	background: url('../images/nfpa.png') no-repeat center center;
+	display: block;
+	width: 216px;
+	height: 109px;
+}
+
+.isoMark {
+	background: url('../images/isoMark.png') no-repeat center center;
+	display: block;
+	width: 216px;
+	height: 109px;
+}
+
+.lastFooter {
+	background-color: #26272B;
+	font-size: 14px;
+	color: #888A91;
+	padding-top: 48px;
+	padding-bottom: 28px;
+}
+
+/*-------------- MEDIA QUERIES --------------*/
+
+@media only screen and (max-width: 768px) {
+	.topHeader {
+		padding-bottom: 0px;
+	}
+
+	.topHeader ul li {
+		margin-left: 7px;
+		margin-bottom: 20px;
+	}
+
+   .responder {
+		max-width: 75%;
+	}
+
+	.floater {
+		float: left!important;
+		min-width: 320px; 
+	}
+
+	.logo {
+		padding: 5px;
+		margin-top: 11px;
+	}
+
+	.navbar-default .navbar-nav>li>a.headerLinks {
+		color: #000000;
+		line-height: 50px;
+		padding-left: 10px;
+	}
+
+	.practicality {
+		margin-top: 45px;
+	}
+
+	.thoughtfulness {
+		margin-top: 45px;
+	}
+
+	.torontoPearson {
+		margin: 57px 0px;
+	}
+
+	.universityToronto {
+		margin: 57px 0px;
+	}
+
+	.hiltonHotels {
+		margin: 57px 0px;	
+	}
+
+	.toronto {
+		margin: 57px 0px;
+	}
+
+	.company {
+		margin-bottom: 50px;
+	}
+
+	.contact {
+		margin-bottom: 50px;
+	}
+
+	.consultingEngineers {
+		margin-bottom: 50px;
+	}
+
+	.engineersOntario {
+		margin-bottom: 50px;
+	}
+
+	.nfpa {
+		margin-bottom: 50px;
+	}
+
+	.isoMark {
+		margin-bottom: 50px;
+	}
+
+	.lastFooter {
+		padding-left: 10px;
+	}
+}
