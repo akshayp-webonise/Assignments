@@ -29,13 +29,13 @@ a, a:hover {
 	background-color: #212121;
 }
 
-.logoImg {
-	display: block;
-}
-
 .logo {
 	float: left;
 	padding: 15px 0px;
+}
+
+a.logo>img {
+	display: block;
 }
 
 .headerButtons  {
@@ -54,6 +54,14 @@ a, a:hover {
 
 .headerLinks li {
 	float: left;
+}
+
+.fa-check {
+	color: #6AA233;
+}
+
+.fa-times {
+	color: #BCBEC0;
 }
 
 .headerButtons a {
@@ -88,7 +96,7 @@ a, a:hover {
 
 .content {
 	padding-top: 88px;
-	margin-bottom: 52px;
+	padding-bottom: 148px;
 	text-align: center;
 }
 
@@ -104,9 +112,20 @@ a, a:hover {
 .planChooser {
 	width: 345px;
 	margin: 0px auto;
+	margin-bottom: 52px;
 }
 
-.planChooser a {
+.planChooser>a:first-child {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.planChooser>a:last-child {
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.content .planChooser>a {
 	float: left;
 	line-height: 48px;
 	font-weight: 700;
@@ -116,47 +135,26 @@ a, a:hover {
 	width: 170px;
 }
 
-.planChooser a.active {
+.content a.active {
 	background-color: #F9E9EA;
 	color: #C1272D;
 	border-color: #C1272D;
 }
 
-.planChooser a span {
+.content a span {
 	font-weight: 400;
 }
 
-.planChooser a:hover {
+.content a:hover {
 	background-color: #F9E9EA;
 	color: #C1272D;
 	border-color: #C1272D;
-}
-
-.monthly {
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-}
-
-.yearly {
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px; 
-}
-
-.cross {
-	color: #BCBEC0;
-}
- 
-.tick {
-	color: #6AA233;
 }
 
 .features {
 	text-align: center;
 	margin-bottom: 64px;
-}
-
-.hovering {
-	width: 186px;
+	float: left;
 }
 
 .leftColumn {
@@ -164,13 +162,11 @@ a, a:hover {
 	margin-top: 177px;
 }
 
-.options {
-	float: left;
+.leftColumn li {
 	width: 190px;
 }
 
 .values li {
-	float: left;
 	border-bottom: 1px solid #ECEAEA;
 }
 
@@ -178,7 +174,7 @@ a, a:hover {
 	border-top: 1px solid #ECEAEA;
 }
 
-.values li h3 {
+.leftColumn h3 {
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -191,19 +187,19 @@ a, a:hover {
 	line-height: 16px;
 }
 
-.values span, .values li a {
+.leftColumn span, .leftColumn a {
 	display: block;
 	text-transform: capitalize;
 	font-weight: 500;
 } 
 
-.values li a {
+.leftColumn a {
 	color: #C1272C;
 	font-weight: 700;
 	text-decoration: underline;
 }
 
-.features .offerOptions {
+ul.features>li {
 	float: left;
 }
 
@@ -232,12 +228,12 @@ a, a:hover {
 	color: #6D6E71;
 }
 
-.cost li sup {
+.cost sup {
 	font-size: 18px;
 	vertical-align: super;
 }
 
-.cost li sub {
+.cost sub {
 	font-size: 15px;
 	vertical-align: sub;
 }
@@ -250,15 +246,11 @@ a, a:hover {
 	vertical-align: middle;
 }
 
-.liteRadius {
+ul.features>li:first-child .offer  {
 	border-top-left-radius: 6px;
 }
 
-.liteRadius span {
-	margin-bottom: 6px;
-}
-
-.bestValue {
+.offer span.bestValue {
 	font-size: 12px;
 	color: #FDBDBD;
 	text-transform: uppercase;
@@ -266,14 +258,7 @@ a, a:hover {
 	margin-bottom: 6px;
 }
 
-.standard {
-	font-size: 18px;
-	color: #FFFFFF;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-.businessRadius {
+ul.features>li:last-child .offer {
 	border-top-right-radius: 6px;
 	background-color: #515151;
 }
@@ -283,19 +268,24 @@ a, a:hover {
 	text-transform: uppercase;
 }
 
-.package {
+.offer h2 {
 	font-weight: 700;
 	font-size: 18px;
 	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
-.duration {
+ul.features>li:first-child h2 {
+	margin-bottom: 8px;
+}
+
+.offer span {
 	font-weight: 600;
 	font-size: 14px;
 	color: #CCCCCC;
 }
 
-.gettingStarted a {
+.cost li:last-child a {
 	display: block;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -310,19 +300,18 @@ a, a:hover {
 	margin-bottom: 3px;
 }
 
-.gettingStarted a:hover {
+.cost li:last-child a:hover {
 	color: #FFFFFF;
 	background-color: #C1272C;
 }
 
-.diminishing {
+.cost label {
 	display: none;
 }
 
 .contactUs {
 	display: block;
 	text-align: center;
-	margin-bottom: 148px;
 	color: #C1272C;
 	font-size: 15px;
 	font-weight: 600;
@@ -393,8 +382,14 @@ a, a:hover {
 
 @media only screen and (max-width: 1199px) {
 	.container {
-		width: 738px;
-		margin: 0px auto;
+		width: 100%;
+		padding: 0px 15px;
+		box-sizing: border-box;
+	}
+
+	.content {
+		padding-top: 30px;
+		padding-bottom: 30px;
 	}
 	
 	.headerButtons {
@@ -405,40 +400,59 @@ a, a:hover {
 		display: none;
 	}
 
-	.options {
+	.leftColumn li {
 		display: none;
+	}
+	
+	.planChooser>a:first-child {
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+	}
+
+	.planChooser>a:last-child {
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
 	}
 
 	.planChooser {
-		width: 284px;
+		width: 350px;
+		margin: 0px auto;
+		margin-bottom: 30px;
+	}
+
+	.plans {
+		width: 372px;
 		margin: 0px auto;
 	}
-	
-	.planChooser a {
-		width: 140px;
+
+	.content a {
 		font-size: 16px;
 	}
 	
 	.features {
-		width: 460px;
+		width: 372px;
 		margin: 0px auto;
 	}
 
-	.offerOptions {
+	ul.features>li {
 		width: 186px;
 		margin-bottom: 30px;
 	}
 	
-	.offerOptions:nth-child(odd) {
-		margin-right: 80px;
-	}
-
 	.offer {
 		border-top-left-radius: 6px;
 		border-top-right-radius: 6px;
 	}
 	
-	.diminishing {
+	ul.features>li:nth-child(even) .offer {
+		border-top-left-radius: 0px;
+	}
+
+	ul.features>li:nth-child(odd) .offer {
+		border-top-right-radius: 0px;
+	}
+	
+	.cost label {
 		display: block;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -448,29 +462,26 @@ a, a:hover {
 		margin-bottom: 6px;
 	}
 
-	.diminishing span, .diminishing a {
+	.cost label span, .cost label a {
 		display: block;
 		font-size: 12px;
 		font-weight: 500;
 		text-transform: capitalize;
 	} 
 
-	.diminishing a {
+	.cost label a {
 		color: #C1272C;
 		font-weight: 700;
 		text-decoration: underline;
-	}
-
-	.contactUs {
-		margin-bottom: 100px;
 	}
 
 }
 
 @media only screen and (max-width: 767px) {
 	.container {
-		width: 550px;
-		margin: 0px auto;
+		width: 100%;
+		padding: 0px 15px;
+		box-sizing: border-box;
 	}
 	
 	.headerButtons {
@@ -483,6 +494,11 @@ a, a:hover {
 
 	.content {
 		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	
+	.content .planChooser>a {
+		border-radius: 3px;
 	}
 
 	.content h1 {
@@ -490,24 +506,28 @@ a, a:hover {
 		margin-bottom: 33px;
 	}
 
-	.options {
+	.leftColumn li {
 		display: none;
 	}
 
 	.planChooser {
-		width: 190px;
+		width: 173px;
 		margin: 0px auto;
+		margin-bottom: 30px;
 	}
 	
-	.planChooser a {
+	.plans {
+		width: 186px;
+		margin: 0px auto;
+	}
+
+	.content a {
 		width: 186px;
 		font-size: 14px;
-		border: 1px solid #CAC9C9;
-		border-radius: 6px;
 		margin-bottom: 10px;
 	}
 
-	.planChooser a:last-child {
+	.content a:last-child {
 		margin-bottom: 0px;
 	}
 	
@@ -516,9 +536,13 @@ a, a:hover {
 		margin: 0px auto;
 	}
 
-	.offerOptions {
+	ul.features>li {
 		width: 186px;
 		margin-bottom: 30px;
+	}
+
+	ul.features>li:nth-child(odd) {
+		margin-right: 0px;
 	}
 
 	.offer {
@@ -526,7 +550,7 @@ a, a:hover {
 		border-top-right-radius: 6px;
 	}
 
-	.diminishing {
+	.cost label {
 		display: block;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -536,7 +560,7 @@ a, a:hover {
 		line-height: 16px;
 	}
 
-	.diminishing span a {
+	.cost label span a {
 		display: block;
 		font-size: 10px;
 		font-weight: 500;
@@ -544,7 +568,7 @@ a, a:hover {
 	}
 
 	.contactUs {
-		margin-bottom: 48px;
+		margin-bottom: 0px;
 	}
 
 	.footer {
@@ -566,16 +590,4 @@ a, a:hover {
 
 }
 
-@media  only screen and (max-width: 480px) {
-	.container {
-		width: 350px;
-		margin: 0px auto;
-	}
-}
-
-@media only screen and (max-width: 320px) {
-	.container {
-		width: 310px;
-		margin: 0px auto;
-	}
 }
