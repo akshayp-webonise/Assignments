@@ -325,16 +325,13 @@ a, a:hover {
 	margin-bottom: 148px;
 	color: #C1272C;
 	font-size: 15px;
+	font-weight: 600;
 }
 
 .contactUs a {
 	font-weight: 700;
 	text-decoration: underline;
 	color: #C1272C;
-}
-
-.contactUs span {
-	font-weight: 600;
 }
 
 .footer {
