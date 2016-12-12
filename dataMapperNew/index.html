@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title></title>
+	<title>Data Mapper</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
@@ -59,10 +59,14 @@
 	<div class="content">
 		<div class="container">	
 			<h1>Choose a Membership Plan</h1>
-			<div class="planChooser clearfix">
-				<a class="active" href="#">Monthly</a>
-				<a href="#">Yearly <span>(17% Off)</span></a>
-			</div>
+			<ul class="planChooser clearfix">
+				<li class="active">
+					<a href="#features1">Monthly</a>
+				</li>
+				<li>
+					<a href="#features2">Yearly <span>(17% Off)</span></a>
+				</li>
+			</ul>
 		
 			<div class="plans clearfix">
 				<ul class="leftColumn">
@@ -100,14 +104,14 @@
 					</li>
 				</ul>
 
-				<ul class="features clearfix">
+				<ul id="features1" class="features clearfix">
 					<li>
 						<div class="offer">
 							<h2>lite</h2>
 							<span>free 1-month trial</span>
 						</div>
-						<ul class="cost">
-							<li><span><sup>$</sup>49<sub>/MO</sub></span></li>
+						<ul>
+							<li><sup>$</sup>49<sub>/MO</sub></li>
 							<li>
 								<label>Cloud Based 2D/3D Maps
 									<span>(Any Resolution)</span>
@@ -162,8 +166,8 @@
 							<span class="bestValue">Best Value</span>
 							<h2>Standard</h2>
 						</div>
-						<ul class="cost">
-							<li><span><sup>$</sup>95<sub>/MO</sub></span></li>
+						<ul>
+							<li><sup>$</sup>95<sub>/MO</sub></li>
 							<li>
 								<label>Cloud Based 2D/3D Maps
 									<span>(Any Resolution)</span>
@@ -217,8 +221,8 @@
 						<div class="offer">
 							<h2>Standard <i class="fa fa-plus" aria-hidden="true"></i></h2>
 						</div>
-						<ul class="cost">
-							<li><span><sup>$</sup>240<sub>/MO</sub></span></li>
+						<ul>
+							<li><sup>$</sup>240<sub>/MO</sub></li>
 							<li>
 								<label>Cloud Based 2D/3D Maps
 									<span>(Any Resolution)</span>
@@ -272,8 +276,8 @@
 						<div class="offer">
 							<h2>Business</h2>
 						</div>
-						<ul class="cost">
-							<li><span><sup>$</sup>450<sub>/MO</sub></span></li>
+						<ul>
+							<li><sup>$</sup>450<sub>/MO</sub></li>
 							<li>
 								<label>Cloud Based 2D/3D Maps
 									<span>(Any Resolution)</span>
@@ -323,6 +327,231 @@
 						</ul>
 					</li>
 				</ul>
+
+				<ul id="features2" class="features clearfix">
+					<li>
+						<div class="offer">
+							<h2>lite</h2>
+							<span>free 1-month trial</span>
+						</div>
+						<ul>
+							<li><sup>$</sup>588<sub>/YR</sub></li>
+							<li>
+								<label>Cloud Based 2D/3D Maps
+									<span>(Any Resolution)</span>
+								</label>5/mo
+							</li>
+							<li>
+								<label>Storage</label>
+								50 GB
+							</li>
+							<li>
+								<label>Export</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Infield Tool
+									<span>Instant Data Review</span>
+								</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Volumetrics</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Unlimited endvi & ndvi</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Unlimited advanced Vegetative Indices<a href="#">Learn More</a></label>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>DataMapper Local<span>Offline Image Processor</span></label>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Multiple User Access</label>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Add-on advanced analysis tools</label>
+								$4.99-$19/mo
+							</li>
+							<li>
+								<a href="#">Get Started</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="active">
+						<div class="offer">
+							<span class="bestValue">Best Value</span>
+							<h2>Standard</h2>
+						</div>
+						<ul>
+							<li><sup>$</sup>1140<sub>/YR</sub></li>
+							<li>
+								<label>Cloud Based 2D/3D Maps
+									<span>(Any Resolution)</span>
+								</label>10/mo
+							</li>
+							<li>
+								<label >Storage</label>
+								150 GB
+							</li>
+							<li>
+								<label>Export</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Infield Tool
+									<span>Instant Data Review</span>
+								</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Volumetrics</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Unlimited endvi & ndvi</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Unlimited advanced Vegetative Indices<a href="#">Learn More</a></label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>DataMapper Local<span>Offline Image Processor</span></label>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Multiple User Access</label>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Add-on advanced analysis tools</label>
+								$9.99-$29/mo
+							</li>
+							<li>
+								<a href="#">Get Started</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="offer">
+							<h2>Standard <i class="fa fa-plus" aria-hidden="true"></i></h2>
+						</div>
+						<ul>
+							<li><sup>$</sup>2880<sub>/YR</sub></li>
+							<li>
+								<label>Cloud Based 2D/3D Maps
+									<span>(Any Resolution)</span>
+								</label>10/mo
+							</li>
+							<li>
+								<label>Storage</label>
+								150 GB
+							</li>
+							<li>
+								<label>Export</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Infield Tool
+									<span>Instant Data Review</span>
+								</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Volumetrics</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Unlimited endvi & ndvi</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Unlimited advanced Vegetative Indices<a href="#">Learn More</a></label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>DataMapper Local<span>Offline Image Processor</span></label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Multiple User Access</label>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Add-on advanced analysis tools</label>
+								$9.99-$29/mo
+							</li>
+							<li>
+								<a href="#">Get Started</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<div class="offer">
+							<h2>Business</h2>
+						</div>
+						<ul>
+							<li><sup>$</sup>5400<sub>/YR</sub></li>
+							<li>
+								<label>Cloud Based 2D/3D Maps
+									<span>(Any Resolution)</span>
+								</label>50/mo
+							</li>
+							<li>
+								<label>Storage</label>
+								Unlimited
+							</li>
+							<li>
+								<label>Export</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Infield Tool
+									<span>Instant Data Review</span>
+								</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Volumetrics</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Unlimited endvi &amp; ndvi</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Unlimited advanced Vegetative Indices<a href="#">Learn More</a></label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>DataMapper Local<span>Offline Image Processor</span></label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Multiple User Access</label>
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</li>
+							<li>
+								<label>Add-on advanced analysis tools</label>
+								$49-$149/mo
+							</li>
+							<li>
+								<a href="#">Get Started</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
 			</div>
 		
 			<span class="contactUs"><a href="#" title="Contact Us">Contact us</a> for Enterprise pricing options</span>
@@ -350,5 +579,8 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/tabs.js"></script>
 </body>
 </html>

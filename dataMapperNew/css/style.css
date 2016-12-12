@@ -50,10 +50,12 @@ a.logo>img {
 
 .headerButtons li {
 	float: left;
+	margin-left: 23px;
 }
 
 .headerLinks li {
 	float: left;
+	margin-left: 23px;
 }
 
 .fa-check {
@@ -85,7 +87,6 @@ a.logo>img {
 	text-transform: uppercase;
 	color: #FFFFFF;
 	font-weight: 700;
-	margin-left: 23px;
 	display: block;
 }
 
@@ -115,40 +116,47 @@ a.logo>img {
 	margin-bottom: 52px;
 }
 
-.planChooser>a:first-child {
-	border-top-left-radius: 3px;
-	border-bottom-left-radius: 3px;
-}
-
-.planChooser>a:last-child {
-	border-top-right-radius: 3px;
-	border-bottom-right-radius: 3px;
-}
-
-.content .planChooser>a {
+.planChooser li {
 	float: left;
 	line-height: 48px;
 	font-weight: 700;
 	color: #646464;
 	border: 1px solid #CAC9C9;
+	border-radius: 3px;
 	text-align: center;
 	width: 170px;
 }
 
-.content a.active {
+.planChooser li:first-child{
+	border-radius: 3px 0px 0px 3px;
+}
+
+.planChooser li:last-child{
+	border-radius: 0px 3px 3px 0px;
+}
+
+.planChooser li:hover {
 	background-color: #F9E9EA;
 	color: #C1272D;
 	border-color: #C1272D;
+}
+
+.planChooser li.active {
+	background-color: #F9E9EA;
+	border-color: #C1272D;
+}
+
+.planChooser li>a {
+	display: block;
+	color: #646464;
+}
+
+.planChooser li.active>a, .planChooser li>a:hover {
+	color: #C1272D;
 }
 
 .content a span {
 	font-weight: 400;
-}
-
-.content a:hover {
-	background-color: #F9E9EA;
-	color: #C1272D;
-	border-color: #C1272D;
 }
 
 .features {
@@ -199,41 +207,46 @@ a.logo>img {
 	text-decoration: underline;
 }
 
+.leftColumn a:hover {
+	color: #4CAF50;
+}
+
 ul.features>li {
 	float: left;
+	margin-left: -1px;
 }
 
 .features li.active .offer {
 	background-color: #C1272C;
 }
 
-.features li.active .cost {
+.features li.active ul.features>li>ul {
 	background-color: #F8F8F8;
 }
 
-.cost {
+ul.features>li>ul {
 	text-align: center;
 	border: 1px solid #CCCCCC;
 }
 
-.cost li {
+ul.features>li>ul li {
 	padding: 20px 0px;
 	border-bottom: 1px solid #ECEAEA;
 }
 
-.cost li:first-child {
+ul.features>li>ul li:first-child {
 	font-size: 45px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	color: #6D6E71;
 }
 
-.cost sup {
+ul.features>li>ul sup {
 	font-size: 18px;
 	vertical-align: super;
 }
 
-.cost sub {
+ul.features>li>ul sub {
 	font-size: 15px;
 	vertical-align: sub;
 }
@@ -285,7 +298,7 @@ ul.features>li:first-child h2 {
 	color: #CCCCCC;
 }
 
-.cost li:last-child a {
+ul.features>li>ul li:last-child a {
 	display: block;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -296,16 +309,14 @@ ul.features>li:first-child h2 {
 	margin: 0px auto;
 	color: #C1272C;
 	border-radius: 3px;
-	margin-top: 7px;
-	margin-bottom: 3px;
 }
 
-.cost li:last-child a:hover {
+ul.features>li>ul li:last-child a:hover {
 	color: #FFFFFF;
 	background-color: #C1272C;
 }
 
-.cost label {
+ul.features>li>ul label {
 	display: none;
 }
 
@@ -321,6 +332,10 @@ ul.features>li:first-child h2 {
 	font-weight: 700;
 	text-decoration: underline;
 	color: #C1272C;
+}
+
+.contactUs a:hover {
+	color: #4CAF50;
 }
 
 .footer {
@@ -378,6 +393,10 @@ ul.features>li:first-child h2 {
 	text-decoration: underline;
 }
 
+.copyPrivacy a:hover {
+	color: #FFFFFF;
+}
+
 /*-------------- MEDIA QUERIES --------------*/
 
 @media only screen and (max-width: 1199px) {
@@ -402,16 +421,6 @@ ul.features>li:first-child h2 {
 
 	.leftColumn li {
 		display: none;
-	}
-	
-	.planChooser>a:first-child {
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
-	}
-
-	.planChooser>a:last-child {
-		border-top-right-radius: 3px;
-		border-bottom-right-radius: 3px;
 	}
 
 	.planChooser {
@@ -452,7 +461,7 @@ ul.features>li:first-child h2 {
 		border-top-right-radius: 0px;
 	}
 	
-	.cost label {
+	ul.features>li>ul label {
 		display: block;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -462,14 +471,14 @@ ul.features>li:first-child h2 {
 		margin-bottom: 6px;
 	}
 
-	.cost label span, .cost label a {
+	ul.features>li>ul label span, ul.features>li>ul label a {
 		display: block;
 		font-size: 12px;
 		font-weight: 500;
 		text-transform: capitalize;
 	} 
 
-	.cost label a {
+	ul.features>li>ul label a {
 		color: #C1272C;
 		font-weight: 700;
 		text-decoration: underline;
@@ -497,7 +506,7 @@ ul.features>li:first-child h2 {
 		padding-bottom: 45px;
 	}
 	
-	.content .planChooser>a {
+	.planChooser li>a {
 		border-radius: 3px;
 	}
 
@@ -515,7 +524,16 @@ ul.features>li:first-child h2 {
 		margin: 0px auto;
 		margin-bottom: 30px;
 	}
+
+	.planChooser li {
+		margin-bottom: 20px;
+		border-radius: 3px !important;
+	}
 	
+	.planChooser li:last-child {
+		margin-bottom: 0px;
+	}
+
 	.plans {
 		width: 186px;
 		margin: 0px auto;
@@ -524,11 +542,6 @@ ul.features>li:first-child h2 {
 	.content a {
 		width: 186px;
 		font-size: 14px;
-		margin-bottom: 10px;
-	}
-
-	.content a:last-child {
-		margin-bottom: 0px;
 	}
 	
 	.features {
@@ -541,16 +554,15 @@ ul.features>li:first-child h2 {
 		margin-bottom: 30px;
 	}
 
-	ul.features>li:nth-child(odd) {
-		margin-right: 0px;
-	}
-
-	.offer {
-		border-top-left-radius: 6px;
+	ul.features>li:nth-child(odd) .offer {
 		border-top-right-radius: 6px;
 	}
 
-	.cost label {
+	ul.features>li:nth-child(even) .offer {
+		border-top-left-radius: 6px;
+	}
+
+	ul.features>li>ul label {
 		display: block;
 		text-transform: uppercase;
 		font-weight: 700;
@@ -560,7 +572,7 @@ ul.features>li:first-child h2 {
 		line-height: 16px;
 	}
 
-	.cost label span a {
+	ul.features>li>ul label span a {
 		display: block;
 		font-size: 10px;
 		font-weight: 500;
@@ -587,7 +599,5 @@ ul.features>li:first-child h2 {
 	.copyPrivacy span, .copyPrivacy a {
 		line-height: 20px;
 	}
-
-}
 
 }
