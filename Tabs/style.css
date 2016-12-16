@@ -1,0 +1,63 @@
+p, ul, li, div{
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 940px;
+	margin: 0px auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+	display: table;
+  	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.tabs {
+	list-style-type: none;
+}
+
+.tabs li {
+	float: left;
+	font-family: 'Monaco';
+	font-size: 16px;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	border-radius: 6px 6px 0px 0px;
+}
+
+.tabs li a {
+	display: block;
+	line-height: 40px;
+}
+
+.tabs li.active, .tabs li:hover {
+	background-color: #CCC;
+	color: #FFF;
+}
+
+.panel.active {
+	display: block;
+}
+
+.panel {
+	display: none;
+	padding: 20px;
+	background-color: #DCDCDC;
+}
+
+.panel p {
+	width: 900px;
+	font-family: 'Monaco';
+	font-size: 14px;
+}

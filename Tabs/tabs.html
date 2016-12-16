@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabs</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="tabPanel">
+			<ul class="tabs clearfix">
+				<li class="active"><a href="#panel1">Tab 1</a></li>
+				<li><a href="#panel2">Tab 2</a></li>
+				<li><a href="#panel3">Tab 3</a></li>
+				<li><a href="#panel4">Tab 4</a></li>
+			</ul>
+
+			<div id="panel1" class="panel active">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sint perspiciatis vero possimus tempora dolore odit, fugit dolores consequuntur quo, delectus quis deleniti nemo qui rem voluptatem! At sunt, quo.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia provident, aut libero culpa, similique, corrupti ipsam neque vel eligendi magnam unde? Placeat ducimus fugit quasi aliquam optio exercitationem assumenda.</p>
+			</div>
+
+			<div id="panel2" class="panel">
+				<p>With the death of German President Paul von Hindenburg, Chancellor Adolf Hitler becomes absolute dictator of Germany under the title of Fuhrer, or “Leader.” The German army took an oath of allegiance to its new commander-in-chief, and the last remnants of Germany’s democratic government were dismantled to make way for Hitler’s Third Reich. The Fuhrer assured his people that the Third Reich would last for a thousand years, but Nazi Germany collapsed just 11 years later.</p>
+			</div>
+
+			<div id="panel3" class="panel">
+				<p>Adolf Hitler was born in Braunau am Inn, Austria, in 1889. As a young man he aspired to be a painter, but he received little public recognition and lived in poverty in Vienna. Of German descent, he came to detest Austria as a “patchwork nation” of various ethnic groups, and in 1913 he moved to the German city of Munich in the state of Bavaria. After a year of drifting, he found direction as a German soldier in World War I, and was decorated for his bravery on the battlefield. He was in a military hospital in 1918, recovering from a mustard gas attack that left him temporarily blind, when Germany surrendered.</p>
+			</div>
+
+			<div id="panel4" class="panel">
+				<p>He was appalled by Germany’s defeat, which he blamed on “enemies within”–chiefly German communists and Jews–and was enraged by the punitive peace settlement forced on Germany by the victorious Allies. He remained in the German army after the war, and as an intelligence agent was ordered to report on subversive activities in Munich’s political parties. It was in this capacity that he joined the tiny German Workers’ Party, made up of embittered army veterans, as the group’s seventh member. Hitler was put in charge of the party’s propaganda, and in 1920 he assumed leadership of the organization, changing its name to Nationalsozialistische Deutsche Arbeiterpartei (National Socialist German Workers’ party), which was abbreviated to Nazi.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.tabs li a').click(function() {
+				var panelHandler = $(this).attr('href');
+				$(this).parent().siblings().removeClass('active');
+				$(this).parent().addClass('active');
+				$(panelHandler).siblings().removeClass('active');
+				$(panelHandler).addClass('active');
+			});
+		});
+	</script>
+</body>
+</html>
