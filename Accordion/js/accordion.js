@@ -1,9 +1,10 @@
 $(document).ready(function() {
-	$('.accordion p').hide();
+	$('.accordion .dropper').hide();
 	$('.accordion a').click(function() {
-		$(this).parent().addClass('active');
-		$(this).next('p').slideDown();
+		var toggler = $(this).attr('href');
 		$(this).parent().siblings().removeClass('active');
-		$(this).parent().siblings().children('p').slideUp();
+		$(this).parent().toggleClass('active');
+		$(toggler).slideToggle();
+		$(this).parent().siblings().children('.dropper').slideUp();
 	});
 });
