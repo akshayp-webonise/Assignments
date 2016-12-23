@@ -1,0 +1,32 @@
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.headerLinks>li {
+	display: inline-block;
+	margin-left: 30px;
+	position: relative;	
+}
+
+.innerList a {
+	display: block;
+}
+
+.innerList {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+}
