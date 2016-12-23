@@ -1,10 +1,15 @@
 $(document).ready(function() {
-	$('.accordion .dropper').hide();
-	$('.accordion a').click(function() {
-		var toggler = $(this).attr('href');
+	$('.contentToggler').hide();
+	$('.accordionMenu a').click(function() {
+		var getID = $(this).attr('href');
+		$('.contentToggler').hide();
 		$(this).parent().siblings().removeClass('active');
-		$(this).parent().toggleClass('active');
-		$(toggler).slideToggle();
-		$(this).parent().siblings().children('.dropper').slideUp();
+		$(this).parent().toggleClass('active');	
+
+		if($(this).parent().attr("class")==('active')) {
+			$(getID).show();
+		} else {
+			$(getID).hide();	
+		}
 	});
 });

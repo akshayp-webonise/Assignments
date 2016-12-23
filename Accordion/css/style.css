@@ -1,12 +1,14 @@
-.accordion {
-	width: 500px;
-	margin: 0px auto;
-}
+@import url("bootstrap.min.css");
+@import url("reset.css");
 
-.accordion li {
-	list-style-type: none;
-}
-
-.accordion a {
+.accordionMenu a {
 	text-decoration: none;
 }
+
+/*.active {
+	display: block;
+}
+
+.contentToggler {
+	display: none;
+}*/
